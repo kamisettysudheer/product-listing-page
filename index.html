@@ -1,58 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Product Listing Page</title>
+    <style>
+      * {
+        margin: auto;
+        padding: 10px;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        text-align: center;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      body {
+        width: 100%;
+        aspect-ratio: 1;
+      }
 
-<head>
-  <title>Product Listing Page</title>
-</head>
+      header {
+        width: 80%;
+        border: 1px solid black;
+        margin: 20px auto;
+        border-radius: 15px;
+      }
+      main {
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 15px;
+      }
+      a {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 2% 5%;
+      }
 
-<body>
-  <header style="margin: 10px auto;width: 70%; height: 80px;text-align: center;border: 3px solid black;">
-    <h1>Welcome to this Page</h1>
-  </header>
-  <main
-    style="margin: 20px auto;width: 90%;height: auto;border-width: 2px 0px 0px 0px;border-style: solid;border-color: black;">
-
-    <div
-      style="margin: 15px;width: 30%; height: 500px; background-color: bisque;display: inline-block;border: 1px solid black; border-radius: 5%;box-sizing: border-box;">
-      <section style="width: 90%;margin: auto;">
-        <h3 style="text-align: center;">Coffee</h3>
-        <img src="assets/images/image.png" alt="Coffee" width="60%"
-          style="border: 1px solid black;border-radius: 5%;margin: 10% 20%;">
-        <div
-          style="margin: auto;width: 90%;height: 50px;background-color: gray;border: 1px solid black; border-radius: 10px;box-sizing: border-box;">
+      .item {
+        width: 30%;
+        aspect-ratio: 1;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 10px;
+        box-shadow: 1px 1px 4px black;
+      }
+      .counter {
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: grey;
+      }
+      .counter > p {
+        display: inline-block;
+      }
+      .picture {
+        width: 70%;
+        border-radius: 15px;
+        aspect-ratio: 1;
+      }
+      #plus {
+        font-size: 26px;
+      }
+      #minus {
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to this Page</h1>
+    </header>
+    <main>
+      <div class="item">
+        <h2>item name</h2>
+        <img src="https://picsum.photos/200" class="picture" />
+        <div class="counter">
+          <a href="#" id="minus">-</a>
+          <p>Quantity : 0</p>
+          <a href="#" id="plus">+</a>
         </div>
-      </section>
-    </div>
-    <div
-      style="margin: 15px;width: 30%; height: 500px; background-color: bisque;display: inline-block;border: 1px solid black; border-radius: 5%;box-sizing: border-box;">
-      <section style="width: 90%;margin: auto;">
-        <h3 style="text-align: center;">Tea</h3>
-        <img src="assets/images/image.png" alt="Coffee" width="60%"
-          style="border: 1px solid black;border-radius: 5%;margin: 10% 20%;">
-        <div
-          style="margin: auto;width: 90%;height: 50px;background-color: gray;border: 1px solid black; border-radius: 10px;box-sizing: border-box;">
+      </div>
+      <div class="item">
+        <h2>item name</h2>
+        <img src="https://picsum.photos/200" class="picture" />
+        <div class="counter">
+          <a href="#" id="minus">-</a>
+          <p>Quantity : 0</p>
+          <a href="#" id="plus">+</a>
         </div>
-      </section>
-    </div>
-    <div
-      style="margin: 15px;width: 30%; height: 500px; background-color: bisque;display: inline-block;border: 1px solid black; border-radius: 5%;box-sizing: border-box;">
-      <section style="width: 90%;margin: auto;">
-        <h3 style="text-align: center;">Milk</h3>
-        <img src="assets/images/image.png" alt="Coffee" width="60%"
-          style="border: 1px solid black;border-radius: 5%;margin: 10% 20%;">
-        <div
-          style="margin: auto;width: 90%;height: 50px;background-color: gray;border: 1px solid black; border-radius: 10px;box-sizing: border-box;">
+      </div>
+      <div class="item">
+        <h2>item name</h2>
+        <img src="https://picsum.photos/200" class="picture" />
+        <div class="counter">
+          <a href="#" id="minus">-</a>
+          <p>Quantity : 0</p>
+          <a href="#" id="plus">+</a>
         </div>
-      </section>
-    </div>
-
-    <!-- <div
-      style="margin: 15px;width: 30%; height: 500px; background-color: bisque;display: inline-block;border: 1px solid black;border-radius: 5%;">
-    </div> -->
-
-    <!-- <div style="margin: 15px;width: 30%; height: 500px; background-color: bisque;display: inline-block;"></div> -->
-
-  </main>
-</body>
-
+      </div>
+      <div class="item">
+        <h2>item name</h2>
+        <img src="https://picsum.photos/200" class="picture" />
+        <div class="counter">
+          <a href="#" id="minus">-</a>
+          <p>Quantity : 0</p>
+          <a href="#" id="plus">+</a>
+        </div>
+      </div>
+      <div class="item">
+        <h2>item name</h2>
+        <img src="https://picsum.photos/200" class="picture" />
+        <div class="counter">
+          <a href="#" id="minus">-</a>
+          <p>Quantity : 0</p>
+          <a href="#" id="plus">+</a>
+        </div>
+      </div>
+      <div class="item">
+        <h2>item name</h2>
+        <img src="https://picsum.photos/200" class="picture" />
+        <div class="counter">
+          <a href="#" id="minus">-</a>
+          <p>Quantity : 0</p>
+          <a href="#" id="plus">+</a>
+        </div>
+      </div>
+      <div class="item">
+        <h2>item name</h2>
+        <img src="https://picsum.photos/200" class="picture" />
+        <div class="counter">
+          <a href="#" id="minus">-</a>
+          <p>Quantity : 0</p>
+          <a href="#" id="plus">+</a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
